@@ -3,4 +3,3 @@ uvicorn
 jinja2
 python-dotenv
 requests
-google-genai
