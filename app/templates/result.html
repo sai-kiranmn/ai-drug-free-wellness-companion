@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check-In Result</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <main class="chat-page">
+        <section class="chat-container">
+            <div class="chat-header">
+                <p class="tagline">AI Analysis Result</p>
+                <h1>Your Wellness Check-In</h1>
+            </div>
+
+            <div class="result-card">
+                <p><strong>Mood:</strong> {{ mood }}</p>
+                <p><strong>Stress Level:</strong> {{ stress }}/10</p>
+                <p><strong>Risk Level:</strong> {{ risk_level }}</p>
+                <p><strong>Reason:</strong> {{ reason }}</p>
+                <p><strong>Guidance:</strong> {{ guidance }}</p>
+            </div>
+
+            <p class="safety-note">
+                This is not a medical diagnosis. It is an AI-based wellness support tool.
+                If someone feels seriously unsafe or overwhelmed, they should contact a trusted adult,
+                counselor, teacher, guardian, or emergency support.
+            </p>
+
+            <a href="/checkin" class="primary-btn">Do Another Check-In</a>
+            <a href="/" class="back-link">← Back to Home</a>
+        </section>
+    </main>
+</body>
+</html>

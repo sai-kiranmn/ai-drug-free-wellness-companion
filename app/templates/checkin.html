@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mood Check-In</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <main class="chat-page">
+        <section class="chat-container">
+            <div class="chat-header">
+                <p class="tagline">Mood Check-In</p>
+                <h1>Check Your Emotional State</h1>
+                <p>
+                    This helps the AI understand stress patterns and support healthier,
+                    drug-free coping choices.
+                </p>
+            </div>
+
+            <form action="/checkin-result" method="get" class="checkin-form">
+                <label>Your current mood</label>
+                <input type="text" name="mood" placeholder="Example: stressed, calm, sad, anxious" required>
+
+                <label>Stress level: 1 to 10</label>
+                <input type="number" name="stress" min="1" max="10" value="5" required>
+
+                <label>Short note</label>
+                <textarea name="note" placeholder="Write what is affecting you today..." required></textarea>
+
+                <button type="submit" class="primary-form-btn">Analyze My Check-In</button>
+            </form>
+
+            <a href="/" class="back-link">← Back to Home</a>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ app_name }}</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <main class="chat-page">
+        <section class="chat-container">
+            <div class="chat-header">
+                <p class="tagline">AI Voice Support</p>
+                <h1>AI Wellness Chatbot</h1>
+                <p>
+                    Speak or type how you feel. The bot will respond with calm, positive,
+                    drug-free wellness guidance.
+                </p>
+            </div>
+
+            <div class="chat-box">
+                <div class="bot-message">
+                    Hello, I am your AI wellness companion. You can tell me how you are feeling today.
+                </div>
+            </div>
+
+            <div class="chat-controls">
+                <input 
+                    type="text" 
+                    id="userInput" 
+                    placeholder="Type your message here..."
+                >
+
+                <button id="sendBtn">Send</button>
+                <button id="voiceBtn">🎙 Voice</button>
+            </div>
+
+            <p class="safety-note">
+                Note: This bot gives wellness support, not medical diagnosis. If someone is in serious distress,
+                they should speak to a trusted person, counselor, guardian, teacher, or emergency support.
+            </p>
+
+            <a href="/" class="back-link">← Back to Home</a>
+        </section>
+    </main>
+
+    <script src="/static/js/voice.js"></script>
+</body>
+</html>
