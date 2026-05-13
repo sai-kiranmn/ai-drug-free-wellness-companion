@@ -255,3 +255,74 @@ h2 {
 .result-card h2:first-child {
     margin-top: 0;
 }
+
+/* FINAL PREMIUM UI OVERRIDE */
+
+body {
+    background:
+        radial-gradient(circle at top left, rgba(168, 85, 247, 0.35), transparent 35%),
+        radial-gradient(circle at top right, rgba(56, 189, 248, 0.25), transparent 35%),
+        linear-gradient(135deg, #080617, #111827, #020617);
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.hero-card,
+.chat-container,
+.result-card {
+    background: rgba(15, 23, 42, 0.72);
+    border: 1px solid rgba(148, 163, 184, 0.25);
+    backdrop-filter: blur(18px);
+    box-shadow:
+        0 0 35px rgba(168, 85, 247, 0.22),
+        0 0 80px rgba(56, 189, 248, 0.12);
+}
+
+h1 {
+    background: linear-gradient(135deg, #a855f7, #38bdf8, #67e8f9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+h2,
+.tagline,
+.result-card h2 {
+    color: #67e8f9;
+}
+
+.primary-btn,
+.primary-form-btn,
+#sendBtn {
+    background: linear-gradient(135deg, #a855f7, #38bdf8);
+    color: white;
+    box-shadow: 0 0 24px rgba(168, 85, 247, 0.45);
+}
+
+.secondary-btn,
+#voiceBtn {
+    background: rgba(56, 189, 248, 0.12);
+    border: 1px solid #38bdf8;
+    color: #67e8f9;
+}
+
+.chat-box,
+.checkin-form input,
+.checkin-form textarea {
+    background: rgba(2, 6, 23, 0.75);
+    border: 1px solid rgba(148, 163, 184, 0.25);
+}
+
+.bot-message {
+    background: rgba(30, 41, 59, 0.95);
+    border: 1px solid rgba(56, 189, 248, 0.25);
+}
+
+.user-message {
+    background: linear-gradient(135deg, #22c55e, #67e8f9);
+    color: #052e16;
+}
+
+a,
+.back-link {
+    color: #67e8f9;
+}
