@@ -26,7 +26,7 @@ def generate_bot_reply(user_message: str) -> dict:
             "Thanks for sharing that. Your feeling is valid. Try to slow things down and focus on one helpful action right now. "
             "A short break, a calm breath, or writing your thoughts can help you understand what you need next."
         )
-
+#else 
     else:
         reply = (
             "I am glad you checked in. Staying aware of your emotions is a strong habit. "
